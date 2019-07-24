@@ -1,0 +1,107 @@
+<div>
+  <nav class="octotree_sidebar">
+    <a class="octotree_toggle btn">
+      <div class="loader"></div>
+      <span></span>
+
+      <div class="popup">
+        <div class="arrow"></div>
+        <div class="content">
+          JDGitCodeTree 在该页面已经启用，点击该按钮或者按下
+          <kbd>cmd shift s</kbd> (或 <kbd>ctrl shift s</kbd>)
+          来显示它。
+        </div>
+      </div>
+    </a>
+
+    <a class="octotree_opts" href="javascript:void(0)">
+      <span></span>
+    </a>
+
+    <div class="octotree_views">
+      <div class="octotree_view octotree_treeview current">
+        <div class="octotree_view_header"></div>
+        <div class="octotree_view_body"></div>
+      </div>
+
+      <div class="octotree_view octotree_errorview">
+        <div class="octotree_view_header"></div>
+        <form class="octotree_view_body">
+          <div class="message"></div>
+          <div>
+            <input name="token" type="text" placeholder="将访问令牌填写在此处" autocomplete="off">
+          </div>
+          <div>
+            <button type="submit" class="btn">保存</button>
+            <a href="https://gitee.com/oschina/GitCodeTree#access-token" target="_blank" tabIndex="-1">为什么它是必填的？</a>
+          </div>
+          <div class="error"></div>
+        </form>
+      </div>
+
+      <div class="octotree_view octotree_optsview">
+        <div class="octotree_view_header">设置</div>
+        <form class="octotree_view_body">
+          <div>
+            <label>网站访问令牌</label>
+            <a class="octotree_help" href="https://gitee.com/oschina/GitCodeTree#%E8%AE%BE%E7%BD%AE" target="_blank" tabIndex="-1">
+              <span></span>
+            </a>
+            <input type="text" data-store="TOKEN" data-perhost="true">
+          </div>
+
+          <div>
+            <div>
+              <label>热键</label>
+            </div>
+            <input type="text" data-store="HOTKEYS">
+          </div>
+
+          <!-- @ifdef SUPPORT_GHE -->
+          <div class="octotree_github_only">
+            <div>
+              <label>GitHub Enterprise URLs</label>
+            </div>
+            <textarea data-store="GHEURLS" placeholder="https://github.mysite1.com__SPACES__https://github.mysite2.com">
+            </textarea>
+          </div>
+          <!-- @endif -->
+
+          <!-- @ifdef SUPPORT_FILE_ICONS -->
+          <div>
+            <label><input type="checkbox" data-store="ICONS"> 显示文件特定的图标</label>
+          </div>
+          <!-- @endif -->
+
+          <div>
+            <label><input type="checkbox" data-store="REMEMBER"> 记住展开/收起状态</label>
+          </div>
+
+          <div>
+            <label><input type="checkbox" data-store="NONCODE"> 在没有代码的页面也显示</label>
+          </div>
+
+          <div class="octotree_github_only">
+            <label><input type="checkbox" data-store="LOADALL"> 一次性加载整个文件树</label>
+          </div>
+
+          <div class="octotree_github_only">
+            <label>
+              <input type="checkbox" data-store="PR">
+                只显示拉取请求中的变更内容
+              <span class="octotree_opts_disclaimer">注: 最大 300 个文件</span>
+            </label>
+          </div>
+
+          <div>
+            <button type="submit" class="btn">保存</button>
+          </div>
+
+          <div class="octotree_opts_backing">
+            <span>感觉很棒? <a href="https://github.com/zhhyang/JDGitCodeTree" target="_blank">Star</a> 一下支持 JDGitCodeTree 的作者继续他的开发工作。</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+</div>

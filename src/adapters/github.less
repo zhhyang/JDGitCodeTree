@@ -1,0 +1,171 @@
+.octotree-show {
+  .octotree_github_only {
+    display: none;
+  }
+
+  .octotree_github_sidebar {
+    a.octotree_toggle {
+      right: 12px;
+      top: 12px;
+      &:not(.octotree_loading) > span:after {
+        content: data-uri('image/svg+xml;charset=UTF-8', './octicons/chevron-left.svg');
+      }
+      &:not(.octotree_loading):hover > span:after {
+        content: data-uri('image/svg+xml;charset=UTF-8', './octicons/chevron-left-hover.svg');
+      }
+    }
+  }
+
+  body.split-diff .container {
+    padding-left: 0;
+  }
+}
+
+.octotree_github_sidebar {
+  padding-top: 54px;
+  background-color: #f7f7f7;
+  border-right: none;
+
+  .octotree_github_only {
+    display: block;
+  }
+
+  .octotree_views {
+    border-right: 1px solid #ddd;
+    background-color: #fff;
+
+    .octotree_view {
+      .octotree_view_header {
+        font-weight: normal;
+        text-shadow: none;
+        height: 54px;
+        line-height: 2.8;
+        background: #fafbfc none;
+        border-right: 1px solid #e1e4e8;
+        border-bottom: 1px solid #e1e4e8;
+      }
+
+      .octotree_help {
+        & > span:before {
+          content: data-uri('image/svg+xml;charset=UTF-8', './octicons/question.svg');
+        }
+      }
+
+      input[type=text], textarea {
+        padding: 4px 8px;
+        color: #24292e;
+        background-color: #fafbfc;
+        border: 1px solid #d1d5da;
+        border-radius: 3px;
+        outline: none;
+        box-shadow: rgba(27, 31, 35, 0.075) 0px 1px 2px inset;
+
+        &:focus {
+          border-color: #2188ff;
+          box-shadow: inset 0 1px 2px rgba(27,31,35,0.075), 0 0 0 0.2em rgba(3,102,214,0.3);
+        }
+      }
+
+      textarea {
+        padding: 6px 8px;
+      }
+    }
+
+    .octotree_treeview {
+      .octotree_header_repo {
+        font-size: 13px;
+        font-weight: normal;
+      }
+      .octotree_header_repo:before {
+        position: relative;
+        top: 2px;
+        content: data-uri('image/svg+xml;charset=UTF-8', './octicons/repo.svg');
+      }
+      .octotree_header_branch {
+        font-size: 11px;
+      }
+      .octotree_header_branch:before {
+        position: relative;
+        top: 2px;
+        content: data-uri('image/svg+xml;charset=UTF-8', './octicons/git-branch.svg');
+      }
+      .jstree-icon.tree, .jstree-icon.commit, .jstree-icon.blob.file-generic {
+        margin-top: 3px;
+      }
+      .jstree-icon.tree:before {
+        content: data-uri('image/svg+xml;charset=UTF-8', './octicons/file-directory.svg');
+      }
+      .jstree-icon.file-generic:before {
+        content: data-uri('image/svg+xml;charset=UTF-8', './octicons/file-text.svg');
+      }
+      .jstree-node.jstree-leaf:hover {
+        .jstree-icon.blob {
+          margin-top: 1px;
+          &:before {
+            content: data-uri('image/svg+xml;charset=UTF-8', './octicons/cloud-download.svg');
+          }
+        }
+      }
+      .jstree-icon.commit:before {
+        content: data-uri('image/svg+xml;charset=UTF-8', './octicons/file-submodule.svg');
+      }
+      .jstree-anchor {
+        color: #0366d6 !important;
+        & > span {
+          color: black;
+        }
+      }
+      .jstree-default {
+        .jstree-wholerow-hovered {
+          background: #eee;
+        }
+        .jstree-wholerow-clicked {
+          background: #dbeeff;
+        }
+      }
+
+      .patch {
+        display: none;
+      }
+
+      .patch:last-of-type {
+        display: inline;
+        font-size: 80%;
+        span {
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+
+  a.octotree_toggle, a.octotree_opts {
+    color: black !important;
+
+    &:hover, &.selected {
+      color: #0366d6 !important;
+    }
+  }
+
+  a.octotree_opts {
+    top: 19px;
+    right: 48px;
+    width: 14px;
+    height: 16px;
+    background: data-uri('image/svg+xml;charset=UTF-8', './octicons/gear.svg');
+    &:hover {
+      background: data-uri('image/svg+xml;charset=UTF-8', './octicons/gear-hover.svg');
+    }
+  }
+
+  a.octotree_toggle {
+    top: 12px;
+    right: -35px;
+
+    &:not(.octotree_loading) > span:after {
+      content: data-uri('image/svg+xml;charset=UTF-8', './octicons/chevron-right.svg');
+    }
+    &:not(.octotree_loading):hover > span:after {
+      content: data-uri('image/svg+xml;charset=UTF-8', './octicons/chevron-right-hover.svg');
+    }
+  }
+}
