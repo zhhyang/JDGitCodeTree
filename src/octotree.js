@@ -18,13 +18,13 @@ $(document).ready(() => {
       .concat('https://github.com')
 
     const bitbucketUrls = ['https://bitbucket.org']
-    const oschinaUrls = [
+    const jdgitUrls = [
       'https://git.jd.com','http://git.jd.com'
     ]
     const currentUrl = `${location.protocol}//${location.host}`
 
-    if (~oschinaUrls.indexOf(currentUrl)) {
-      return new Oschina(store)
+    if (~jdgitUrls.indexOf(currentUrl)) {
+      return new JDGit(store)
     } else if (~githubUrls.indexOf(currentUrl)) {
       return new GitHub(store)
     } else if (~bitbucketUrls.indexOf(currentUrl)) {

@@ -1,6 +1,6 @@
 {
   "name": "jdgittree",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Code tree for git.jd.com",
   "main": "inject.js",
   "scripts": {

@@ -5,7 +5,7 @@ const OSC_PJAX_CONTAINER_SEL = '#git-project-content'
 const OSC_CONTAINERS = '#git-header-nav'
 const OSC_RAW_CONTENT = 'body > pre'
 
-class Oschina extends PjaxAdapter {
+class JDGit extends PjaxAdapter {
 
   constructor(store) {
     super(store)

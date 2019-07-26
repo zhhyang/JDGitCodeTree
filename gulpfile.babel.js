@@ -182,7 +182,7 @@ function buildJs(overrides, ctx) {
     './src/adapters/pjax.js',
     './src/adapters/bitbucket.js',
     './src/adapters/github.js',
-    './src/adapters/oschina.js',
+    './src/adapters/jdgit.js',
     './src/view.help.js',
     './src/view.error.js',
     './src/view.tree.js',

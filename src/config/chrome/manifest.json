@@ -6,13 +6,11 @@
   "description": "基于 Octotree 的[Git](http://git.jd.com)文件树插件",
   "homepage_url": "https://github.com/zhhyang/JDGitCodeTree",
   "icons": {
-    "128": "icons/icon128.png"
+    "128": "icons/icon_128.png"
   },
   "permissions": [
-    "https://github.com/*",
     "http://git.jd.com/*",
     "https://git.jd.com/*",
-    "https://bitbucket.org/*",
     "storage"
   ],
   "optional_permissions": [
